@@ -1,13 +1,90 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+/* Import Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Reset */
+html, body {
+  margin: 0; /* Remove all margins from html and body */
+  padding: 0; /* Remove all padding */
+  width: 100%; /* Ensure full-width layout */
+  height: 100%; /* Ensure full-height layout */
+  font-family: Arial, sans-serif; /* Keep one consistent font-family */
+  background-color: #f9f9f9; /* Set background color */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Navbar Styles */
+nav {
+  background-color: #933;
+  color: white;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0; /* Navbar sticks to the top while scrolling */
+  z-index: 1000; /* Ensures navbar stays above other content */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds slight shadow for better visibility */
+}
+
+/* Navbar List Styles */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Centers the links */
+  gap: 20px; /* Adds spacing between items */
+}
+
+/* Navbar Link Styles */
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px; /* Adds rounded corners */
+  transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+nav ul li a:hover {
+  background-color: #555; /* Highlights the link on hover */
+}
+
+/* Heading and General Styling */
+div {
+  padding: 0px;
+  text-align: center; /* Centers the text */
+  background-color: #f9f9f9; /* Light background for contrast */
+}
+
+h1 {
+  padding-top: 30px;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2rem;
+  color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column; /* Stack links vertically */
+    align-items: center; /* Center the links */
+    gap: 10px; /* Add spacing between items */
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
 }

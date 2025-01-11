@@ -18,6 +18,9 @@ function App() {
         <Route path="/skills" element={<Skills />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <footer style={{ backgroundColor: '#933', color: 'white', textAlign: 'center', padding: '15px 0', marginTop: '20px' }}>
+        <p>© 2025 Alex's Portfolio. All rights reserved.</p>
+      </footer>
     </Router>
   );
 }
