@@ -65,8 +65,16 @@ h1 {
 
 p {
   font-size: 1.2rem;
+}
+
+.white-text {
   color: white;
 }
+
+.black-text {
+  color: black;
+}
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {
