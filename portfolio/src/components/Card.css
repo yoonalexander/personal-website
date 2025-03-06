@@ -1,0 +1,22 @@
+/* Card.css - Styles specific to the Card component */
+.card {
+    background: transparent; /* Matches the container background for a seamless look */
+    padding: 3rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    width: 90%;
+    text-align: left;
+  }
+  
+  .card h1 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+  }
+  
+  .card p {
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+  

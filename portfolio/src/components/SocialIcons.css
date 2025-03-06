@@ -1,0 +1,30 @@
+/* src/components/SocialIcons.css */
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .icon-container a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    background: #e0e0e0;
+    transition: transform 0.2s, background 0.3s ease;
+  }
+  
+  .icon-container a:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Dark mode styles */
+  .app-container.dark .icon-container a {
+    background: #444;
+  }
+  
